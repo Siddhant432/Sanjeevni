@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        .container h2 {
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        h3{
+            color: rgb(10, 243, 10);
+            font-weight: bold;
+        }
+        #dis {
+            margin-top: 20px;
+            font-size: 30px;
+            margin-left: 110px;
+            
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            
+        }
+        #abc{
+            display: flex;
+            flex-direction: row;
+        }
+        #abc>h2{
+            margin-left: 400px;
+            margin-top: 30px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="abc">
+            <img src="WhatsApp_Image_2024-04-20_at_10.41.33-removebg-preview (1).png" alt="">
+            <h2>User Details Form</h2>
+        </div>
+
+       
+        <form id="userForm">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="col-md-6">
+                    <label for="Contact">Contact No:</label>
+                    <input type="number" class="form-control" id="Contact" name="Contact">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="col-md-6">
+                    <label for="Gender">Gender:</label>
+                    <input type="text" class="form-control" id="Gender" name="Gender">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="Age">Age:</label>
+                    <input type="number" class="form-control" id="Age" name="Age">
+                </div>
+                <div class="col-md-6">
+                    <label for="Height">Height:</label>
+                    <input type="number" class="form-control" id="Height" name="Height">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="Weight">Weight:</label>
+                    <input type="number" class="form-control" id="Weight" name="Weight">
+                </div>
+                <div class="col-md-6">
+                    <label for="Haemoglobin">Haemoglobin Alc(HbALc):</label>
+                    <input type="number" class="form-control" id="Haemoglobin" name="Haemoglobin">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="Systolic Bp">Systolic Bp:</label>
+                    <input type="number" class="form-control" id="Systolic" name="Systolic">
+                </div>
+                <div class="col-md-6">
+                    <label for="Diastolic Bp">Diastolic Bp:</label>
+                    <input type="number" class="form-control" id="Diastolic" name="Diastolic">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="Spyrometry">Spirometry:</label>
+                    <input type="number" class="form-control" id="Spyrometry" name="Spyrometry">
+                </div>
+                <div class="col-md-6">
+                    <label for="Gfr">Glomelular Filtration Rate:</label>
+                    <input type="number" class="form-control" id="Gfr" name="Gfr">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="DEXA">DEXA Scans:</label>
+                    <input type="number" class="form-control" id="DEXA" name="DEXA">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+        
+    <div id="dis"></div>
+    </div>
+    <div id="dis">
+    </div>
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+
+<!-- Your custom JavaScript goes here -->
+
+</body>
+</html>
