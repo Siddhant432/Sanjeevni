@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Details Form</title>
     <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+    <link rel="stylesheet" href="bootstrap.css"> 
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap.css">
     <!-- Custom CSS -->
     <style>
         body {
@@ -86,6 +89,33 @@
 <body>
 <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script src="https://mediafiles.botpress.cloud/acd78299-0c42-4113-a432-eb31e794a8a2/webchat/config.js" defer></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brnad">
+                <img src= "22.png" height="75">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle= "collapse" data-bs-target="#navbar1">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link  active">Home</a>
+                        <!--<div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Company</a>
+                                <a href="#" class="dropdown-item">Team</a>
+                            </div>
+                        </div>-->
+                        <a href="aboutus.html" class="nav-item nav-link  active">About Us</a>
+                        <a href="#contactus" class="nav-item nav-link active">Contact Us</a>
+                        <a href="physicians.html" class="nav-item nav-link  active">Physician</a>
+                        <a href="login.html" class="nav-item nav-link  active">Login</a>
+                        <a href="form.html" class="nav-item nav-link  active">CheckUp</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <div id="abc">
             <img src="WhatsApp_Image_2024-04-20_at_10.41.33-removebg-preview (1).png" alt="">
@@ -172,6 +202,55 @@
     </div>
     <div id="dis">
     </div>
+    <footer class="bg-dark">
+    <section id="contactus" class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="container" style="padding-top: 15px;">
+                    <p class="text-center" style="color: aliceblue;">Contact Us</p>
+                    <div class="text-center contactus">Our Email</div>
+                    <div class="text-center contactus">support@gmail.com</div><br>
+                    <div class="text-center contactus">Our PhoneNo.</div>
+                    <div class="text-center contactus">+91 9943542313</div><br>
+                    <div class="text-center contactus">Our Address</div>
+                    <div class="text-center contactus">HSL Karnataka,Banglore</div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="container" style="padding-top: 15px;">
+                    <p class="text-center" style="color: aliceblue;">Write to Us</p>
+                    <div class="container">
+                        <div class="card-shadow">
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="Name" class="col-3 col-form-label contactus">Enter Your Email</label>
+                                        <div class="col-9">
+                                            <input type="email" class="form-control" name="name" id="name" style="margin-bottom: 10px;">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="Name" class="col-3 col-form-label contactus">Enter Your Message</label>
+                                        <div class="col-9">
+                                            <textarea type="text" class="form-control col-9" name="name" id="name"></textarea>
+                                        </div>
+                                    </div><br>
+                                    <div class="form-group text-center">
+                                        <input type="submit" class="btn btn-primary writetous" value="Send message" onclick="alert('mesage sent successfully')">
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <p style="font-size: smaller; color: aliceblue;">&copy; All rights reserved.</p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
 <!-- Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
